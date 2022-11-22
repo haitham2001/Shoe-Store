@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentLoginBinding
+import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 
-class LoginFragment : Fragment() {
-    lateinit var binding: FragmentLoginBinding
+class WelcomeFragment : Fragment() {
+    lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_login,container,false)
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_welcome,container,false)
         return binding.root
     }
 
