@@ -5,13 +5,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".fragments.InstructionFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
+            style="@style/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_header"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_step_1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_step_2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/welcome_text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_step_3"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="@dimen/field_margin"
+            android:layout_marginBottom="@dimen/field_margin"
+            android:layout_weight="0"
+            android:text="@string/go_to_next_screen"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 </layout>

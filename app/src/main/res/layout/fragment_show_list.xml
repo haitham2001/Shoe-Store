@@ -11,11 +11,16 @@
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:context=".fragments.ShowListFragment">
 
             <LinearLayout
+                android:id="@+id/shoe_list_id"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
             </LinearLayout>
@@ -23,15 +28,18 @@
         </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
+            android:id="@+id/addShoeFloatingButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
             android:clickable="true"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
             android:src="@drawable/ic_add"
             app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="Go to add shoe" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

@@ -10,7 +10,9 @@
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
@@ -18,7 +20,9 @@
         android:label="InstructionFragment" >
         <action
             android:id="@+id/action_instructionFragment_to_showListFragment"
-            app:destination="@id/showListFragment" />
+            app:destination="@id/showListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -26,7 +30,9 @@
         android:label="WelcomeFragment" >
         <action
             android:id="@+id/action_welcomeFragment_to_instructionFragment"
-            app:destination="@id/instructionFragment" />
+            app:destination="@id/instructionFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/showListFragment"
@@ -34,7 +40,9 @@
         android:label="ShowListFragment" >
         <action
             android:id="@+id/action_showListFragment_to_shoeDetailFragment"
-            app:destination="@id/shoeDetailFragment" />
+            app:destination="@id/shoeDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/shoeDetailFragment"
@@ -42,6 +50,10 @@
         android:label="ShoeDetailFragment" >
         <action
             android:id="@+id/action_shoeDetailFragment_to_showListFragment"
-            app:destination="@id/showListFragment" />
+            app:destination="@id/showListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/showListFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

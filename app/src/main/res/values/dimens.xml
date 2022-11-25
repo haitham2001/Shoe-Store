@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="field_margin">16dp</dimen>
+    <dimen name="field_margin">20dp</dimen>
+    <dimen name="shoe_details_margin">16dp</dimen>
+    <dimen name="item_card_margin">8dp</dimen>
 </resources>

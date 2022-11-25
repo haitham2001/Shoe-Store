@@ -4,4 +4,20 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_label_email">Email:</string>
     <string name="login_label_password">Password:</string>
+    <string name="shoe_name_text">Name:</string>
+    <string name="shoe_description_text">Description:</string>
+    <string name="shoe_size_text">Size:</string>
+    <string name="shoe_company_text">Company:</string>
+    <string name="signin_button">Sign-in</string>
+    <string name="signup_button">Signup?</string>
+    <string name="welcome_text">Welcome To the Shoe Store</string>
+    <string name="store_detail">A store where you can find any shoe you want</string>
+    <string name="go_to_next_screen">Next</string>
+    <string name="instructions_header">How to add a shoe:</string>
+    <string name="instructions_step_1">1. In the shoe list screen click on the floating button to add a new shoe to the store</string>
+    <string name="instructions_step_2">2. Fill all the required fields for the shoe</string>
+    <string name="instructions_step_3">3. Once done, click the add button to add the shoe to the shoe list screen</string>
+    <string name="shoe_cancel_button">Cancel</string>
+    <string name="shoe_save_button">Save</string>
+    <string name="logout_item">Logout</string>
 </resources>
