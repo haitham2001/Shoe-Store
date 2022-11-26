@@ -32,12 +32,14 @@ class ShoeDetailFragment : Fragment() {
             container,
             false
         )
-        binding.shoeDetail= Shoe("","","","",R.drawable.ic_add)
-        binding.shoeCancelButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_shoeDetailFragment_to_showListFragment)
-        }
-        binding.shoeSaveButton.setOnClickListener {
-            addShoeToStore(it)
+        with(binding){
+            shoeDetail= Shoe("","","","",R.drawable.ic_add)
+            shoeCancelButton.setOnClickListener {
+                it.findNavController().navigate(R.id.action_shoeDetailFragment_to_showListFragment)
+            }
+            shoeSaveButton.setOnClickListener {
+                addShoeToStore(it)
+            }
         }
         return binding.root
     }
